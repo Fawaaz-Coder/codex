@@ -41,3 +41,16 @@ body {
 .tagline{
     font-size: 1.8rem;
 }
+
+.about-us-div{
+    /* background: url(images/earth.jpg); */
+    background-color: black;
+    color: white;
+    height: 75vh;
+}
+
+.sec-container{
+    background-color: #913232;
+    color: white;
+    height: 60vh;
+}
