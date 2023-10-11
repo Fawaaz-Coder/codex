@@ -42,17 +42,9 @@ body {
     font-size: 1.8rem;
 }
 
-.about-us-div {
-    /* background: url(images/earth.jpg); */
-    background-color: black;
-    color: white;
-    height: 75vh;
-}
-
-.sec-container {
-    background-color: #913232;
-    color: white;
-    height: 60vh;
+.btn-personal {
+    background-color: #000;
+    color: #00ff00;
 }
 
 /* Services Section */
@@ -120,4 +112,50 @@ body {
     font-size: 40px;
     font-weight: 600;
     margin-top: 8%;
+}
+
+#about-us ul li {
+    margin: 10px 0;
+}
+
+#about-us ul {
+    margin-left: -22px;
+}
+
+/* Social media section */
+
+#social-media {
+    /* background: #48b6b6; */
+    background-image: url(images/moon-space.jpg);
+    background-position: center;
+    color: white;
+    padding: 34px 0;
+}
+
+#social-media p {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.social-icons img {
+    width: 60px;
+    transition: 0.5s;
+}
+
+.social-icons a:hover img {
+    transform: translateY(-10px);
+}
+
+/* Footer Section */
+
+#footer {
+    /* background-color: #000; */
+    background-image: url(images/moon-space.jpg);
+    height: 32vh;
+    color: #fff;
+}
+
+.footer-box {
+    padding: 20px;
 }
