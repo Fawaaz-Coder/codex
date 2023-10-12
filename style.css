@@ -1,6 +1,10 @@
 /* Font imports */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif !important;
 }
@@ -45,6 +49,14 @@ body {
 .btn-personal {
     background-color: #000;
     color: #00ff00;
+}
+
+::placeholder {
+    color: black !important;
+}
+
+.input-search:hover {
+    cursor: not-allowed;
 }
 
 /* Services Section */
@@ -149,13 +161,15 @@ body {
 
 /* Footer Section */
 
-#footer {
+#footer-box {
     /* background-color: #000; */
     background-image: url(images/moon-space.jpg);
-    height: 32vh;
+    /* height: 60vh; */
+    height: 7vh;
     color: #fff;
 }
 
-.footer-box {
-    padding: 20px;
-}
+/* 
+.footer-text {
+    text-align: center !important;
+} */
