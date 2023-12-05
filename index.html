@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="shortcut icon" type="image/x-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="shortcut icon" type="image/x-icon" sizes="32x32" href="favicon-32x32.png">
@@ -19,6 +19,16 @@
 </head>
 
 <body>
+
+    <!-- Preloader start -->
+    <div class="preloader-wrapper">
+        <div class="spinner-grow" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Preloader end -->
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-light" id="navbar">
         <a class="navbar-brand" href="https://fawaaz-coder.github.io/codex/">CODEX</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -96,6 +106,56 @@
         </div>
     </section>
 
+    <!-- Clients section -->
+
+    <!-- <section>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section> -->
+
+    <!-- Clients section ended -->
+
     <!-- About Us Section -->
     <section id="about-us">
         <div class="container py-4">
@@ -124,11 +184,15 @@
         <div class="container py-3  text-center">
             <p>Find us on Social Media</p>
             <div class="social-icons mb-3">
-                <a onclick="fbRedirection();" href="https://www.facebook.com/"><img src="images/facebook-icon.png" alt="Facebook Logo"></a>
+                <a onclick="fbRedirection();" href="https://www.facebook.com/"><img src="images/facebook-icon.png"
+                        alt="Facebook Logo"></a>
                 <a href="https://www.instagram.com"><img src="images/instagram-icon.png" alt="Instagram Logo"></a>
-                <a href="https://www.linkedin.com/in/fawaaz-shaikh-303569223?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img src="images/linkedin-icon.png" alt=""></a>
+                <a
+                    href="https://www.linkedin.com/in/fawaaz-shaikh-303569223?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img
+                        src="images/linkedin-icon.png" alt=""></a>
                 <a href="http://www.twitter.com"><img src="images/twitter-icon.png" alt="Twitter Logo"></a>
-                <a href="https://wa.me/message/SPGAG4F3AJ73G1"><img src="images/whatsapp-icon.png" alt="Whatsapp Logoo"></a>
+                <a href="https://wa.me/message/SPGAG4F3AJ73G1"><img src="images/whatsapp-icon.png"
+                        alt="Whatsapp Logoo"></a>
             </div>
         </div>
     </section>
@@ -146,11 +210,19 @@
     <!-- Custom JS -->
 
     <script>
-        function fbRedirection(){
+        function fbRedirection() {
             location.href = "https://www.facebook.com";
         }
     </script>
 
+
+    <script>
+        const preloaderWrapper = document.querySelector('.preloader-wrapper');
+
+        window.addEventListener('load', function () {
+            preloaderWrapper.classList.add('fade-out-animation');
+        })
+    </script>
     <!-- Bootstrap JS -->
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
