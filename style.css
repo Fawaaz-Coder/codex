@@ -10,6 +10,28 @@ body {
     font-family: 'Montserrat', sans-serif !important;
 }
 
+/* Preloader section start */
+
+.preloader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #312688;
+    transition: all .4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fade-out-animation {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Preloader section end */
+
 #navbar {
     background-color: black !important;
     color: white !important;
